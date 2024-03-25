@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        }
+        /* Shrift turi */
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*  Header uchun sozlamalar*/
+        header {
+        background-color: rgb(47, 21, 243);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        }
+
+        /* nav uchun sozlamalar */
+        nav {
+        float: left;
+        width: 12%;
+        height: 300px; 
+        background: #ccc;
+        padding: 20px;
+        }
+
+        /* Nav bar menu atributlari uchun css */
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
+
+        article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; 
+        }
+
+
+        section::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+
+        footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        }
+
+
+        @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+        }
+</style>
+<body>
+    <header>
+        <h1>Futbol olamiga xush kelibsiz</h1>
+    </header>
+    <nav><ul>
+      <li><a href="Kylian mbappe.html">Kylian mbappe</a></li>  
+      <br>
+      <li><a href="Cristiano Ronoldo.html">Cristiano Ronoldo</a></li>
+      <br>
+      <li><a href="Lionel Messi.html">Lionel Messi</a></li>
+      <br>
+      <li><a href="Erling Holland.html">Erling Holland</a></li>
+      <br>
+      <li><a href="Real madrid FC.html">Real madrid FC</a></li>
+      <br>
+      <li><a href="FC Barcelona.html">FC Barcelona</a></li>
+      <br>
+      <li><a href="Manchester city.html">Manchester city</a></li>
+         
+    </ul></nav>
+</body>
+</html>
