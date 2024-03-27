@@ -1,0 +1,12 @@
+h2{
+    color: blue;
+    text-align: center;
+}
+Button{
+   background-color: rgba(13, 151, 236, 0.902);
+   width: 310px;
+   height: 30px;
+   border-radius: 3px;
+   border: 0;
+   color: aliceblue;
+}
