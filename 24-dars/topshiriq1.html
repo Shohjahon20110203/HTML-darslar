@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Kod-5</title>
+<link rel="icon" href="images/icon.ico">
+<style>
+    img {
+        width: 350px;
+        height: 450px;
+    }
+    h3{
+        color: blue;
+        text-align: center;
+    } 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog sarlavhasi */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpqdGkkfVFMEiVTVOTTjsA1QMIVqYpmIktlqNfXpDWA1iydOvNoQgmbTSJlzTG90en11M&usqp=CAU);
+}
+
+
+
+/* Yuqori navigatsiya paneliga uslub berilgan */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Yuqori markaz havolalariga uslub bering */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Hoverda rangni o'zgartiring */
+.topnav a:hover {
+  background-color: rgb(15, 228, 90);
+  color: black;
+}
+
+/* Bir-birining yonida suzuvchi ikkita teng bo'lmagan ustunlar yaratilingan */
+/* Chap ustun*/
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* O'ng ustun */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Soxta rasm */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Maqolalar uchun karta effektini qo'shilgan */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Ustunlardan keyin toza suzuvchilar */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Ta'sirchan tartib - ekran kengligi 800px dan kam bo'lsa, ikkita ustunni yonma-yon emas, balki bir-birining ustiga qo'ying. */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Ta'sirchan tartib - ekran kengligi 400px dan kam bo'lsa, navigatsiya havolalarini bir-birining yonida emas, balki bir-birining ustiga qo'ying. */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <h3>Login form
+        <br>
+        <input type="name" placeholder="Ismingizni kiriting">
+<br>
+<input type="name" placeholder="Familyangizni kiriting">
+<br>
+<input type="login" placeholder="Loginni kiriting">
+<br>
+<input type="password" placeholder="Parol kiriting">
+<br>
+<button>Kirish</button>
+<div class="header">
+    
+    
+    
+  <h1>Mening Web saytim</h1>
+  <p>Ushbu sayt futbol yangiliklari uchun tuzilgan</p>
+    </h3>
+
+</div>
+  
+<div class="topnav">
+  <a href="#">O`zbek futboli</a>
+  <a href="#">Jahon futboli</a>
+  <a href="#">Ko`cha futboli</a>
+  </div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Захирага олинган Мбаппе Энрикени ҳақорат қилди</h2>
+      <h5><a href="#">Jahon futboli</a> / <a href="#">Futbolchilar</a></h5>
+      <img src="https://stadion.uz/images/news/%D0%BC%D0%B1%D0%B0%D0%BF%D0%BF%D0%B5_%D1%8D%D0%BD%D0%B8%D1%80%D0%BA%D0%B5.jpg" alt="Xato">
+      <p>31 март, якшанба куни "ПСЖ" Лига 1нинг 27-тури доирасида "Ле-Классиcо"да сафарда "Марсел"ни мағлуб этди. Лукас Бералдонинг 
+        қизил карточка олганидан сўнг, 10 киши қолган парижликлар иккинчи бўлимда мезбонлар дарвозасига иккита гол урди.</p>
+      <p>65-дақиқада "ПСЖ" бош мураббийи Луис Энрике Килиан Мбаппе ўрнига Рамушни майдонга туширишга қарор қилди. Захирага олинишини
+         ҳақидаги қарор 25 ёшли франциялик футболчига ёқмади.
+
+        Майдонни тарк этар экан, Мбаппе аниқ Луис Энрикени ҳақорат қилди.</p>
+    </div>
+    <div class="card">
+      <h2>Милитао оғир жароҳатидан сўнг илк бор майдонга тушди</h2>
+      <h5><a href="#">Jahon futboli</a> / <a href="#">Futbolchilar</a></h5>
+      <img src="https://stadion.uz/images/news/carva-militao.jpg" alt="Xato">
+      <p>Эдер Милитао жиддий жароҳатдан сўнг илк бор майдонга тушди.</p>
+      <p>Мадриднинг “Реал” клуби ҳимоячиси Ла Лига доирасида “Атлетик”га (2:0) қарши ўйиннинг 92-дақиқасида Даниэль Карвахаль 
+        ўрнига майдонга тушди. Милитао Ла Лиганинг 1-турида "Атлетик"га қарши ўйинда тиззасидан жароҳат олиб, август ойидан бери 
+        майдонга тушмаётганди.
+
+        "Мен жуда бахтлиман. Бу мен тушунтириб бера олмайдиган қувонч. Ўша кунлар оғир эди, лекин энди мен яна хурсандман.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Biz haqimizda</h2>
+      <img src="shohjahon.jfif" alt="Xato">
+      <p>SHOHJAHON STUDIO  <br> Manzil: <br> Jizzax viloyati <br> Zomin tumani <br> Murojat uchun: 990096911</p>
+    </div>
+    <div class="card">
+      <h3>Galareya</h3>
+      <p><img src="futbolchilar.png" alt=""></p>
+      <p><img src="2.png" alt=""></p>
+    </div>
+    <div class="card">
+      <h3>Ishlab chiquvchi</h3>
+      <p>Sherzodov Shohjahon</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+ <h2>Ishlab chiquvchi <br> Sherzodov Shohjahon</h2>
+</div>
+
+</body>
+</html>
