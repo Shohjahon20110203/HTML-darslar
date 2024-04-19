@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-decoration: none;
+    }
+* {
+    box-sizing: border-box;
+    }
+    /* Shrift turi */
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    button {
+        background-color: black;
+        color: white;
+        width: 180px;
+        height: 30px;}
+   
+
+    nav ul {
+  list-style-type: none;
+  
+  overflow: hidden;
+  background-color: rgb(15, 18, 21); /* Navbarda fon rangi */
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(51, 51, 238, 0.915);
+  
+  padding: 1%;
+        color: white;
+    border-radius: 6px;
+}
+
+nav li {
+  float: right; /* Har bir linkni to'g'ri tomoniga olish */
+}
+
+nav li a {
+  display: block;
+  color: rgb(31, 28, 28); /* Linkning rangi */
+  text-align: center;
+  padding: 14px 16px; /* Linkning bo'yoqini va uzunligini o'lchash */
+  text-decoration: none; /* Linkning pastki chiziqqa bo'lishini to'xtatish */
+}
+
+
+
+    .ozod {
+        background-color: white;
+        text-align: right;
+        padding: 2%;
+        width: 50px;
+        height: 50px;
+      }  
+      .shoh1{
+       text-decoration-color: black;
+        margin-left: 20%;
+      }
+    
+    
+     li{
+      width: 150px;
+      height: 100px;
+    }
+    .shoh{
+        display: inline-block;
+        padding: 2%;
+        width: 100%;
+        height: 15px;
+        background-color: white;
+
+    }
+    
+
+    ol li{
+margin-left: 45%;
+
+    }
+    .ilk{
+      margin-left: 20%;
+      
+    }
+   .shoh2{
+    margin-left: 27%;
+   }
+   .diva{
+    width: 60%;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    
+ }
+
+ p{
+     color: rgba(0, 89, 255, 0.651);
+     
+     
+ }
+ .div1{
+     width: 100%;
+     height: 10%;
+     background-color: black;
+     padding:  0px 200px 1px 220px;
+ }
+ a{
+     color: white;
+     text-decoration: none;
+     display: inline-block;
+     margin-left: 40px;
+ }
+     .dropbtn {
+     background-color: #f9f9f900;
+     color: white;
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+     }
+
+     .dropdown {
+     position: relative;
+     display: inline-block;
+   
+     }
+
+     .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: black;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+     }
+
+     .dropdown-content a {
+     color: white;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     }
+
+     .dropdown-content a:hover {background-color: black}
+
+     .dropdown:hover .dropdown-content {
+     display: block;
+     }
+ .dro{
+     position: relative;
+     display: inline-block;
+ }
+ .div5{
+     width: 100%;
+     height: 10%;
+     background-color: black;
+     padding:  0px 200px 1px 220px;
+ }
+ .dropb{
+     background-color: #f9f9f900;
+     color: white;
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+ }
+ .drop{
+     display: none;
+     position: absolute;
+     background-color: black;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+ }
+ .drop a{
+     color: white;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     background-color: black;
+ }
+ .drop a:hover{background-color: black;}
+ .dro:hover .drop{
+     display: block;
+ }
+    </style>
+<body>
+    <div class="shoh">
+        <select name="cars">
+            <option value="volvo">English</option>
+            <option value="saab">Russian</option>
+            <option value="fiat">Uzbekistan</option>
+           
+          </select>
+          <select name="cars">
+            <option value="volvo">USD</option>
+            <option value="saab">RUB</option>
+            <option value="fiat">EUR</option>
+           
+          </select>
+    </div>
+    
+        
+        <img src="https://cdn-icons-png.flaticon.com/128/8367/8367916.png"MobileShop style="width: 100px; margin-left: 35%;" alt=""><h3 style="margin-left: 35%;">MobileShop</h3>
+        <div class="shoh2">
+          <input type="text" style="border: 1px solid black ;width: 100px; margin-left: 50px; margin-right: 50px;">
+        <Button>Cart: 0ITEM</Button>
+        </div>
+        
+    
+    
+    <ul>
+      <div class="div5">
+        <a href="index.html">HOME</a>
+        <div class="dropdown">
+        
+            <button class="dropbtn">Mobile</button>
+            <div class="dropdown-content">
+                <a href="redmi.html">Redmi</a>
+                <a href="xiamoi.html">Xiamoi</a>
+                <a href="samsung.html">Samsung</a>
+            </div>
+        </div>
+        <div class="dro">    
+        <button class="dropb">PC Computer</button>
+        <div class="drop">
+                <a href="mac.html">Macbook</a>
+                <a href="acer.html">Acer</a>
+                <a href="le.html">Lenavo</a>
+        </div>
+        </div>
+</div>
+            
+   
+  
+
+    </ul>
+        
+    
+    <div>
+      <video src="video.mp4" autoplay style="width: 1300px;margin-left: 15%;margin-right: 80px; height: 1000px;" ></video>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIGqoOXcV5biusjY9Gdg1jc9KSUFhsx2ZZtNxU6NU9aA&s" alt=""  style="margin-left: 5%;" >
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqY7saQL45PO0Lnh2Lz2e57FqM7zT-xTzKN4-BePiqbA&s" alt="" style="margin-left: 5%;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8kyjKnVs-bZTrVkMR8aUL1BjRSJ1xsZ7xXm7WHUNQuw&s" alt="" style="margin-left: 5%;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSFq7qpdSq72czHHc30WfN_1762d5Q1NKWaFz1fgQg3Q&s" alt=""  style="margin-left: 6%; ">
+      <img src="https://myday.uz/images/social_photo/33084.jpg" alt="" style="height: 225px; width:225px; margin-left: 6%;" >
+    </div>
+    
+        <h1 ><center>SPECIAL PRODUCTS</center> </h1> <hr>
+      
+<!-- <div  >
+  <ul style="display: inline-flex; width: 100;">
+    <li><img src="https://mini-io-api.texnomart.uz/catalog/product/1027/102702/180528/8a7380f0-e3a0-4a7a-a441-5be15f22ccf1.jpg" alt=""></li>
+    <li><img src="https://mini-io-api.texnomart.uz/catalog/product/1027/102702/180528/8a7380f0-e3a0-4a7a-a441-5be15f22ccf1.jpg" alt=""></li>
+  </ul>
+</div>
+        -->
+        <div >
+          <img src="https://mini-io-api.texnomart.uz/catalog/product/1027/102702/180528/8a7380f0-e3a0-4a7a-a441-5be15f22ccf1.jpg" alt="" style="width: 600px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAqGcAQweWn6V_hLDIqLGJJWgX8GhlqbY9txMuvr3uCg&s" alt="" style="width: 550px;">
+          <img src="https://images.uzum.uz/cn25bc925kub33f2r89g/original.jpg" alt="" style="width: 550px;height: 720px; ">
+          
+                 </div>
+            <hr>
+            <div class="ilk">
+              <img src="https://telegra.ph/file/2512f9d348909e06faa1a.jpg" alt="" style="width: 500px;height:300px"> 
+              <img src="https://m.media-amazon.com/images/I/51U6Pu4v-VL.jpg" alt="" width="180px;height:1500px">
+              <img src="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-summer-sale-in-promotional-banner-style-png-image_5682651.png" alt="" >
+            </div>
+            <hr>
+            <footer>
+              <div class="shoh1">
+                  <div>
+                      <h3>Aloqa</h3>
+                      <p>Manzil: Jizzax viloyati, Zomin tumani </p>
+                      <p>Telefon: 990096911</p>
+                      <p>Email: Uzbuzb314@gmail.com</p>
+                  </div>
+                  
+                  <div >
+                      <h3>Ijtimoiy tarmoqlar</h3>
+                      <ul>
+                         <a href="">Facebook</a><br><br>
+                         <a href="">Instagram</a><br><br>
+                         <a href="">Telegram</a><br><br>
+                      </ul>
+                  </div>
+              </div>
+          </footer>
+</body>
+</html>

@@ -68,7 +68,7 @@ body {
   float: left;
   width: 25%;
   background-color: #f1f1f1;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 /* Soxta rasm */
@@ -119,7 +119,46 @@ h2.img {
   width: 30px;
   height: 30px;
 }
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #c7c7c7;
+}
 </style>
 </head>
 <body>
@@ -139,9 +178,15 @@ h2.img {
   <a href="#">O`zbek futboli</a>
   <a href="#">Jahon futboli</a>
   <a href="#">Ko`cha futboli</a>
-  <a href="registratsiya.html">Ro`yhatdan o`tish</a>
   <a href="aloqa.html">aloqa</a>
   
+<div class="dropdown">
+  <button class="dropbtn">Hisob sozlamalari</button>
+  <div class="dropdown-content">
+  <a href="registratsiya.html">Ro`yhatdan o`tish</a>
+  <a href="login.html">Login</a>
+ 
+  </div>
 
   
 
@@ -151,7 +196,7 @@ h2.img {
   <div class="leftcolumn">
     <div class="card">
       <h2>Захирага олинган Мбаппе Энрикени ҳақорат қилди</h2>
-      <h5><a href="#">Jahon futboli</a> / <a href="#">Futbolchilar</a></h5>
+     
       <img src="https://stadion.uz/images/news/%D0%BC%D0%B1%D0%B0%D0%BF%D0%BF%D0%B5_%D1%8D%D0%BD%D0%B8%D1%80%D0%BA%D0%B5.jpg" alt="Xato">
       <p>31 март, якшанба куни "ПСЖ" Лига 1нинг 27-тури доирасида "Ле-Классиcо"да сафарда "Марсел"ни мағлуб этди. Лукас Бералдонинг 
         қизил карточка олганидан сўнг, 10 киши қолган парижликлар иккинчи бўлимда мезбонлар дарвозасига иккита гол урди.</p>
@@ -162,7 +207,7 @@ h2.img {
     </div>
     <div class="card">
       <h2>Милитао оғир жароҳатидан сўнг илк бор майдонга тушди</h2>
-      <h5><a href="#">Jahon futboli</a> / <a href="#">Futbolchilar</a></h5>
+      
       <img src="https://stadion.uz/images/news/carva-militao.jpg" alt="Xato">
       <p>Эдер Милитао жиддий жароҳатдан сўнг илк бор майдонга тушди.</p>
       <p>Мадриднинг “Реал” клуби ҳимоячиси Ла Лига доирасида “Атлетик”га (2:0) қарши ўйиннинг 92-дақиқасида Даниэль Карвахаль 
@@ -170,6 +215,16 @@ h2.img {
         майдонга тушмаётганди.
 
         "Мен жуда бахтлиман. Бу мен тушунтириб бера олмайдиган қувонч. Ўша кунлар оғир эди, лекин энди мен яна хурсандман.</p>
+    </div>
+    <div class="card">
+      
+      <img src="https://stadion.uz/images/news/anche5.jpg" alt="1">
+      <p>Мадриднинг “Реал” клуби бош мураббийи Карло Анчелотти қишда марказий ҳимоячи сотиб олмоқчи эди. Relevo'га маълум бўлишича, Давид Алаба 
+        жароҳатидан сўнг "Лос-Бланкос" устози клубдан ҳимоя марказига янги ўйинчи сотиб олишни сўраган, бироқ раҳбарият италияликни рад этган.</p>
+       <p>Манбага кўра, "Реал" бошлиқлари, Аурелиен Тчуамени ёрдамида ҳимояни кучайтириш мумкинлигини ҳис қилишган. 30 турдан кейин "Реал" Испания чемпионати турнир жадвалида пешқадамлик қилмоқда.
+
+        Анчелотти шогирдлари ҳисобида 75 очко бор. Иккинчи ўринда бораётган "Барселона" ўртасидаги фарқ саккиз очкони ташкил этади.</p> 
+
     </div>
   </div>
   <div class="rightcolumn">
@@ -186,13 +241,13 @@ h2.img {
     <div class="card">
       <h3>Ishlab chiquvchi</h3>
       <p>Sherzodov Shohjahon</p>
+      <p>Jizzax viloyati</p>
+      <p>Zomin tumani</p>
     </div>
   </div>
 </div>
 
-<div class="footer">
 
-</div>
 
 </body>
 </html>
