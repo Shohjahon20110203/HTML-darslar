@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    .shoh{
+    width: 100%;
+    height: 50px;
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1612832681_46-p-fon-ledyanoi-uzor-72.jpg);
+    background-size: cover;
+    padding: auto;
+}
+.div1{
+    width: 100%;
+    height: 70px;
+    color: black;
+    background-color: white;
+    display: inline-block;
+}
+.div1 a{
+    
+    text-decoration: none;
+    color: black;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    
+}
+.div1 a:hover{
+    color: coral;
+}
+.div3{
+    background-image: url(https://i23.delachieve.com/image/fa1b6cf37e0d0ed1.jpg);
+    background-size: cover;
+    padding: 30px;
+    width: 100%;
+    height: 1000px;
+}
+.div3 h1{
+    display: inline-block;
+    color: black;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+.div3 a{
+    
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    float: right;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.div3 a:hover{
+    color: coral; 
+}
+.div4{
+ background-image: url(data:image/jpeg;base64,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);
+ width: 100%;
+ height: 300px;
+
+}
+
+@import url();
+
+    *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-decoration: none;
+     }
+
+    footer{
+width: 100%;
+position: fixed;
+bottom: 0;
+left: 0;
+background: black;
+  }
+
+   footer .content{
+max-width: 1350px;
+margin: auto;
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+   }
+
+   footer .content p,a{
+color: white;
+   }
+
+   footer .content .box{
+width: 33%;
+transition: all 0.4s ease;
+   }
+
+   footer .content .topic{
+font-size: 25px;
+font-weight: 600;
+color: white;
+margin-bottom: 16px;
+   }
+
+
+   footer .content p{
+text-align: justify;
+   }
+
+
+   footer .content .lower .topic{
+    margin: 24px 0 5px 0;
+   }
+
+
+  footer .content .lower{
+    padding-right: 16px;
+  }
+
+
+   footer .content .middle{
+padding-left: 80px;
+   }
+
+
+  footer .content .middle a{
+    line-height: 32px;
+   }
+.fab fa-twiteer{
+    width: 20px;
+}
+
+footer .content .right input[type="tetx"]
+{
+height: 45px;
+width: 100%;
+outline: none;
+color: white;
+background: black;
+border-radius: 5px;
+padding-left: 10px;
+font-size: 17px;
+border: 2px solid;
+border-color: #22222222;
+}
+
+
+footer .content .right input[type="submit"]
+{
+height: 42px;
+width: 100%;
+font-size: 18px;
+color: white;
+background: red;
+outline: none;
+border-radius: 5px;
+letter-spacing: 1px;
+cursor: col-resize;
+margin-top: 12px;
+border: 2px solid red;
+transition: all 0.3s ease-in-out;
+}
+
+
+.content .right input[type="submit"]:hover
+{
+background: none;
+color: red;
+}
+
+
+footer .content .media-icons a{
+font-size: 16px;
+height: 45px;
+width: 45px;
+display: inline-block;
+text-align: center;
+line-height: 43px;
+border-radius: 5px;
+border: 2px solid #44404022;
+margin: 30px 5px 0 0;
+transition: all 0.3s ease;
+}
+
+
+.content .media-icons a:hover{
+    border-color: red;
+}
+
+
+footer .bottom{
+width: 100%;
+text-align: right;
+color: white;
+padding: 0 40px 5px 0;
+}
+
+
+footer .bottom a{
+    color: red;
+}
+
+
+footer a{
+    transition: all 03.s ease;
+}
+
+
+footer a:hover{
+    color: red;
+}
+.ozodbek:hover{
+border-color: rgb(34, 93, 243);
+background-color: rgb(36, 115, 244);
+color: white;
+cursor: auto;
+}
+.aslam{
+    border-color: blue;
+    background-color: rgb(175, 175, 197);
+    color: rgb(8, 8, 8);
+     cursor:auto;
+}
+@media (max-width:1100px)
+{
+footer .content .middle{
+    padding-left: 50px;
+}
+}
+
+
+@media (max-width:950px){
+    footer .content .box{width: 50%;}
+}
+.content .right{
+    margin-top: 40px;
+}
+
+
+/* @media (max-width:560px){ */
+    footer{
+        position: relative;
+    }
+    footer .content .box{
+width: 100%;
+margin-top: 30px;
+    }
+    footer .content .middle{
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <div class="shoh">
+         <img src="img/1.png" style="margin-left: 15%;margin-top: 0.5%;" alt="" width="30px;">
+         <img src="img/2.png" alt="" width="30px">
+         <img src="img/3.png" alt="" width="30px">
+         <img src="img/4.png" alt="" width="30px">
+     </div>   
+
+     
+    <div class="div1">
+        <h1 style="margin-left: 300px;">z<span style="color: coral;margin-bottom: 1px;font-size: 40px;">Vossen</span></h1>
+        <p style="margin-top: 1px;margin-left: 300px;display: inline-block;font-size: 24px;"> Travel and Tours</p>
+        
+        <a style="margin-right: 180px;" href="#">CONTACT</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">BLOG</a>
+        <a href="#">HOME</a>
+        </div>
+
+
+        <div class="div3">
+            <h1 style="font-size: 70px;margin-bottom: 1px;color: rgb(0, 0, 0);margin-left: 400px;margin-top: 200px;">SEE THE WORD DIFFERENTLY</h1>
+            <p style="margin-top: 1px;color: rgb(0, 0, 0);margin-left: 400px;font-size: 30px;">Request,design and book travel experiences as unlque as you are</p>
+            <div style="width: 600px;height: 50px;background-color: rgba(105, 105, 105, 0.411);margin: auto;margin-top: 200px;">
+              <input type="search" placeholder="Where are you going ?" style="width: 400px;align-items: center;height: 50px;"><button style="border: none;border-radius: 3px;background-color: coral;height: 50px;width: 80px;">Search</button>
+            </div>
+           <h1>Top destination:</h1>
+           <a href="#" style="margin-right: 450px;">San Fransisco</a> 
+           <a href="#" style="margin-right: 50px;">Rome</a>
+           <a href="#" style="margin-right: 50px;">London</a>
+           <a href="#" style="margin-right: 50px;">New york</a> 
+           <a href="#" style="margin-right: 50px;">Paris</a>  
+            
+      </div><br><br><br>
+
+
+      <div style="width: 25%;height: 500px;display: inline-block;margin-left: 150px;"><img style="width: 100%;height: 450px;" src="img/8.jpg" alt="">
+        <h1>Statue of Liberty</h1>
+        <p>The Statue of Liberty on Liberty Island in New York Bay in front of the New York City skyline.</p>
+    </div>
+    <div style="width: 25%;height: 500px;display: inline-block;margin-left: 50px;"><img style="width: 100%;height: 450px;" src="img/9.jpg" alt="">
+        <h1>Statue of Liberty</h1>
+        <p>The Statue of Liberty on Liberty Island in New York Bay in front of the New York City skyline.</p>
+    </div>
+    <div style="width: 25%;height: 500px;display: inline-block;margin-left: 50px;"><img style="width: 100%;height: 450px;" src="img/10.jpg" alt="">
+        <h1>Statue of Liberty</h1>
+        <p>The Statue of Liberty on Liberty Island in New York Bay in front of the New York City skyline.</p>
+    </div>
+      
+      <div>
+        <h1 style="color: chocolate;"><center>ABOUT US</center></h1>
+        <h2 style="margin-left: 5%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus, distinctio hic, consectetur nostrum, similique ipsa quae repellendus est voluptas ipsam alias.</h2> <br> 
+        <h2 style="margin-left: 7%;"> Corrupti necessitatibus amet sequi, repellenstyledus facilis eveniet ut?</h2>
+        <div style="width: 25%;display: inline-block;margin-left: 150px;"><img style="width: 70%;height: 250px;" src="img/5.png" alt="">
+            <h1>Lorem ipsum dolor </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magnam illo laborum est vitae esse sit! Eius, aperiam voluptas! Doloribus facere possimus quidem eos unde ipsam veritatis accusamus eius quae.</p>
+        </div>
+        <div style="width: 25%;;display: inline-block;margin-left: 50px;"><img style="width: 70%;height: 250px;" src="img/6.png" alt="">
+            <h1>Lorem ipsum dolor</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, ipsa. Dolorum porro nisi quidem neque iure hic velit, adipisci quae numquam odit iste ratione eaque corporis mollitia libero dolor officiis.</p>
+        </div>
+        <div style="width: 25%;display: inline-block;margin-left: 50px;"><img style="width: 70%;height: 250px;" src="img/7.png" alt="">
+            <h1>Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum impedit eos aspernatur incidunt quia nihil, ipsam magni vitae eum quos deserunt necessitatibus dolore illum ab est? Incidunt similique </p>
+        </div>   
+       <br><br><br>
+        <button style="margin-left: 40%;
+        width: 100px;
+        border-radius: 8px;
+        background-color: chocolate;
+        height: 50px;">MORE</button>
+      </div>
+      
+      <div style="width: 100%;background-image: url(https://www.thetrainline.com/cms/media/4046/scilla-boats-italy.jpg);background-size: cover;">
+        <br><br><br><br><br>
+       <center style="font-size: 30px;color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing <br> elit. Numquam voluptates autem <br> quia. Architecto, quos iusto!</center>
+
+       <br><br><br>
+    </div>
+      
+     
+      <div style="display: inline-block;">
+        <center style="font-size: 50px;color: coral;">SERVICES</center>
+        <p style="font-size: 27px;margin-left: 300px;margin-right: 300px;font-family: 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat placeat blanditiis obcaecati numquam dolores ut harum rem minima, ratione at nulla asperiores sequi officia id eum itaque vel, perspiciatis culpa.</p>
+        <br><br><br><br>
+        <div style="display: inline-block;width: 20%;margin-left: 300px;height: 300px;">
+            <img src="img/13.png" width="100" height="100" alt="">
+            <h1>Heanderit Mauris</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div style="display: inline-block;width: 20%;">
+            <img src="img/14.png" width="100" height="100" alt="">
+            <h1>Heanderit Mauris</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div style="display: inline-block;width: 20%;">
+            <img src="img/15.png" width="100" height="100" alt="">
+            <h1>Heanderit Mauris</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div style="display: inline-block;width: 20%;">
+            <img src="img/18.png" width="100" height="100" alt="">
+            <h1>Heanderit Mauris</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div style="display: inline-block;width: 20%;margin-left: 300px;">
+            <img src="img/19.png" width="100" height="100" alt="">
+            <h1>Heanderit Mauris</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div style="display: inline-block;width: 20%;">
+            <img src="img/20.png" width="100" height="100" alt="">
+            <h1>Heanderit Mauris</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div style="display: inline-block;width: 20%;">
+            <img src="img/17.png" width="100" height="100" alt="">
+            <h1>Heanderit Mauris</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div style="display: inline-block;width: 20%;">
+            <img src="img/16.png" width="100" height="100" alt="">
+            <h1>Heanderit Mauris</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        
+      
+        </div>
+        <br><br><br><br><br>
+      
+    </div>
+    <div style="width: 100%;background-image: url(https://www.thetrainline.com/cms/media/4046/scilla-boats-italy.jpg);background-size: cover;">
+        <br><br><br><br><br>
+       <center style="font-size: 30px;color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing <br> elit. Numquam voluptates autem <br> quia. Architecto, quos iusto!</center>
+
+       <br><br><br>
+    </div>
+
+    <header style="display: inline-block;width: 50%;">
+        <img src="img/21.jpg" style="margin-left: 200px;" width="300" height="200" alt="">
+        
+        <p style="float: right;width: 40%;">
+        <span style="font-size: 35px;">Italy</span>  <br>  
+        Italy’s political geography has been conditioned by this rugged landscape. With few direct roads between them, and with passage from one point to another traditionally difficult, Italy’s towns and cities have a history of self-sufficiency, independence, and mutual mistrust</p>
+    </header>
+    <section style="width: 50%;display: inline-block;">
+         <div style="width: 190px;display: inline-block;margin-left: 200px;">
+            <img src="img/22.jpg" width="188" alt="">
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+         </div>
+         <div style="width: 190px;display: inline-block;margin-left: 10px;">
+            <img src="img/23.jpg" width="188" alt="">
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+         </div>
+         <div style="width: 190px;display: inline-block;margin-left: 10px;">
+            <img src="img/24.jpg" width="188" alt="">
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+         </div>
+    </section>
+    <aside style="width: 45%;float: right;margin-top: -200px;" >
+        <h1 >Latest News</h1>
+        
+        <h3>🚩Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h3>
+        <hr>
+        <h3>🚩Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h3>
+        <hr><h3>🚩Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h3>
+        <hr>
+        <h3>🚩Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h3>
+        <hr>
+        <h3>🚩Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h3>
+        <hr>
+        <h3>🚩Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h3>
+        <hr>
+        <h3>🚩Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h3>
+        <hr>
+        <h3>🚩Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h3>
+        <hr>
+    </aside>
+    
+    <footer>
+        <div class="content">
+        <div class="left box">
+        <div class="upper">
+
+
+   <div class="topic">About us</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi unde sit, voluptas doloremque, vitae deleniti totam eius doloribus numquam voluptatum nobis odio minima maxime neque eveniet minus nihil tenetur a!</p>
+   </div>
+
+
+<div class="lower">
+
+         <div class="topic">Contact Us</div>
+        <div class="phone">
+      <a href="#"><i class=" fas fa-phone-volume"></i>+94 343 84 01</a>
+        </div>
+
+        <div class="email">
+     <a href="#"><i class="fas fan-evelope"></i>codecafe@gmail.com</a>
+        </div>
+
+
+       </div>
+      </div>
+
+
+       <div class="midle box">
+       <div class="topic">Our service</div>
+<div><a href="#">Web design,Developer</a></div>
+<div><a href="#">Web design,Developer</a></div>
+<div><a href="#">Web design,Developer</a></div>
+<div><a href="#">Web design,Developer</a></div>
+<div><a href="#">Web design,Developer</a></div>
+<div><a href="#">Web design,Developer</a></div>
+        </div>
+        <div class="right-box">
+        <div class="topic">Subscribe Us</div>
+
+    <form action="#">
+
+        <input type="email" placeholder="Enter Email adres..." style="padding: 2%;border-radius: 5px;" class="ozodbek">
+        <input type="submit" placeholder="Enter submit..." name="" value="Send" style="padding: 2%;border-radius: 5px;" class="aslam">
+
+
+    <div class="media-icons">
+<a href="#"> <i class="fab fa-facebook"></i>Fa</a>
+<a href="#"> <i class="fab fa-instagram"></i>In</a>
+<a href="#"> <i class="fab fa-twiteer"></i>Tw</a>
+<a href="#"> <i class="fab fa-youtube"></i>You</a>
+<a href="#"> <i class="fab fa-linkedin-in"></i>Link</a>
+    </div>
+      </form>
+        </div>
+         </div>
+
+        <div class="bottom">
+            <p>Copyright 0 2024 <a href="#">Code cafe</a>All rights reserved</p>
+        </div>
+
+</footer>
+
+     
+   
+    
+     
+     
+</body>
+</html>

@@ -1,0 +1,216 @@
+@import url();
+
+    *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-decoration: none;
+     }
+
+    footer{
+width: 100%;
+position: fixed;
+bottom: 0;
+left: 0;
+background: black;
+  }
+
+   footer .content{
+max-width: 1350px;
+margin: auto;
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+   }
+
+   footer .content p,a{
+color: white;
+   }
+
+   footer .content .box{
+width: 33%;
+transition: all 0.4s ease;
+   }
+
+   footer .content .topic{
+font-size: 25px;
+font-weight: 600;
+color: white;
+margin-bottom: 16px;
+   }
+
+
+   footer .content p{
+text-align: justify;
+   }
+
+
+   footer .content .lower .topic{
+    margin: 24px 0 5px 0;
+   }
+
+
+  footer .content .lower{
+    padding-right: 16px;
+  }
+
+
+   footer .content .middle{
+padding-left: 80px;
+   }
+
+
+  footer .content .middle a{
+    line-height: 32px;
+   }
+.fab fa-twiteer{
+    width: 20px;
+}
+
+footer .content .right input[type="tetx"]
+{
+height: 45px;
+width: 100%;
+outline: none;
+color: white;
+background: black;
+border-radius: 5px;
+padding-left: 10px;
+font-size: 17px;
+border: 2px solid;
+border-color: #22222222;
+}
+
+
+footer .content .right input[type="submit"]
+{
+height: 42px;
+width: 100%;
+font-size: 18px;
+color: white;
+background: red;
+outline: none;
+border-radius: 5px;
+letter-spacing: 1px;
+cursor: col-resize;
+margin-top: 12px;
+border: 2px solid red;
+transition: all 0.3s ease-in-out;
+}
+
+
+.content .right input[type="submit"]:hover
+{
+background: none;
+color: red;
+}
+
+
+footer .content .media-icons a{
+font-size: 16px;
+height: 45px;
+width: 45px;
+display: inline-block;
+text-align: center;
+line-height: 43px;
+border-radius: 5px;
+border: 2px solid #44404022;
+margin: 30px 5px 0 0;
+transition: all 0.3s ease;
+}
+
+
+.content .media-icons a:hover{
+    border-color: red;
+}
+
+
+footer .bottom{
+width: 100%;
+text-align: right;
+color: white;
+padding: 0 40px 5px 0;
+}
+
+
+footer .bottom a{
+    color: red;
+}
+
+
+footer a{
+    transition: all 03.s ease;
+}
+
+
+footer a:hover{
+    color: red;
+}
+.ozodbek:hover{
+border-color: rgb(34, 93, 243);
+background-color: rgb(36, 115, 244);
+color: white;
+cursor: auto;
+}
+.aslam{
+    border-color: blue;
+    background-color: rgb(175, 175, 197);
+    color: rgb(8, 8, 8);
+     cursor:auto;
+}
+@media (max-width:1100px)
+{
+footer .content .middle{
+    padding-left: 50px;
+}
+}
+
+
+@media (max-width:950px){
+    footer .content .box{width: 50%;}
+}
+.content .right{
+    margin-top: 40px;
+}
+
+
+@media (max-width:560px){
+    footer{
+        position: relative;
+    }
+    footer .content .box{
+width: 100%;
+margin-top: 30px;
+    }
+    footer .content .middle{
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
