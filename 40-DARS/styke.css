@@ -1,0 +1,76 @@
+
+body{
+    background-color: #000000;
+}
+.navbar {
+    background-color: #000000;
+    overflow: hidden;
+    border: 1%;
+    padding: 0.4%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 18px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: rgb(80, 255, 115);
+}
+button{
+    width: 160px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: blue;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+button:hover{
+    background-color: white;
+}
+.shoh{
+    margin-left: 3%;
+    width: 97%;
+    height: 800px;
+    background-color: green;
+    border-radius: 20px;
+    display: block;
+}
+.icon{
+margin-left: 57%;
+margin-top: -25%;
+
+}
+.dropbtn {
+    background-color: #f9f9f900;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+  
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    #bgcolorid{
+        width: 240px;
+        height: 200px;
+        border-radius: 15px 1px 20px 50px;
+       float: right;
+        background-color: green;
+        background-size: 5px;
+    }
